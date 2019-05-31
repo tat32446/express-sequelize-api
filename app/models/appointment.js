@@ -5,10 +5,10 @@ module.exports = (sequelize, DataTypes) => {
     patientId: DataTypes.INTEGER
   }, {});
   Appointment.associate = function(models) {
-
+    
     Appointment.belongsTo(models.Physician);
     Appointment.belongsTo(models.Patient);
-    
+
   };
   return Appointment;
 };

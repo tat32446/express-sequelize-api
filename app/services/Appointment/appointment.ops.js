@@ -1,6 +1,6 @@
-const Appointment = require("../../models/appointment").Appointment;
-const Physician = require("../../models/physician").Physician;
-const Patient = require("../../models/patient").Patient;
+const Appointment = require("../../models").Appointment;
+const Physician = require("../../models").Physician;
+const Patient = require("../../models").Patient;
 
 const getAppointments = (req, res) => {
   

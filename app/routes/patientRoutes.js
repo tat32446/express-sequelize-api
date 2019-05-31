@@ -11,7 +11,7 @@ router.get('/patients', (req, res) => {
 });
 
 router.post('/patient', (req, res) => {
-  PatientService.getPatientById(req,res);
+  PatientService.createPatient(req,res);
 });
 
 router.put('/patient/:id', (req, res) => {

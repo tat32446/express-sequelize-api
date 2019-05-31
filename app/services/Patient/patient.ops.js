@@ -1,6 +1,6 @@
 
-const Physician = require("../../models/physician").Physician;
-const Patient = require("../../models/patient").Patient;
+const Physician = require("../../models").Physician;
+const Patient = require("../../models").Patient;
 
 const getPatient = (req, res) => {
   
@@ -24,7 +24,8 @@ const getPatientById = (req, res) => {
         .catch(err => res.json(err));
 }
 
-const createPatient = (res, req) => {
+
+const createPatient = (req, res) => {
     Patient.create({
         name: req.body.name
       })
@@ -43,7 +44,7 @@ const updatePatient = (req, res) => {
     .catch(err => res.json(err));
 }
 
-const deletePatient = (res, req) => {
+const deletePatient = (req, res) => {
     Patient.destroy({
         where: { id: req.params.id }
       })

@@ -1,14 +1,26 @@
 {
   "development": {
-  "dialect": "sqlite",
-  "storage": "../database.sqlite3"
-},
+    "username": "postgres",
+    "port":5433,
+    "password": "pega@123",
+    "database": "postgres",
+    "host": "52.37.247.51",
+    "dialect": "postgres"
+  },
   "test": {
-  "dialect": "sqlite",
-  "storage": ":memory"
-},
+    "username": "postgres",
+    "port":5433,
+    "password": "pega@123",
+    "database": "postgres",
+    "host": "52.37.247.51",
+    "dialect": "postgres"
+  },
   "production": {
-  "dialect": "sqlite",
-  "storage": "../database.sqlite3"
-}
+    "username": "postgres",
+    "port":5433,
+    "password": "pega@123",
+    "database": "postgres",
+    "host": "52.37.247.51",
+    "dialect": "postgres"
+  }
 }
