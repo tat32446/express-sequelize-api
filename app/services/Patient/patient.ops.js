@@ -4,13 +4,19 @@ const Patient = require("../../models").Patient;
 
 const getPatient = (req, res) => {
   
-    Patient.findAll({
+   Patient.findAll({
+
         include: [Physician]
       })
         .then(patients => {
           res.json(patients);
         })
-        .catch(err => res.json(err));
+        .catch(err => {
+          res.json(err);
+          console.log(err);
+
+        } );
+       
 }
 
 const getPatientById = (req, res) => {
@@ -32,7 +38,15 @@ const createPatient = (req, res) => {
         .then(res => {
           res.json(res);
         })
-        .catch(err => res.json(err));
+        .catch(err => {
+          
+          console.log(err);
+          res.json(err)
+    
+        }
+        
+        );
+
 }
 
 const updatePatient = (req, res) => {

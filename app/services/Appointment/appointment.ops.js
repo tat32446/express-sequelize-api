@@ -23,7 +23,7 @@ const getAppointmentById = (req, res) => {
       });
 }
 
-const createAppointment = (res, req) => {
+const createAppointment = (req, res) => {
     Appointment.create({
         physicianId: req.body.physicianId,
         patientId: req.body.patientId
