@@ -8,7 +8,7 @@ module.exports = (sequelize, DataTypes) => {
     {}
   );
   Patient.associate = function(models) {
-    Patient.belongsToMany(models.Physician, { through: "Appointment", foreignKey: "patientId" });
+    Patient.belongsToMany(models.Physician, { through: 'Appointment', foreignKey: 'id' });
   };
   return Patient;
 };

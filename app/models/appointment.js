@@ -9,8 +9,8 @@ module.exports = (sequelize, DataTypes) => {
     {}
   );
   Appointment.associate = function(models) {
-    Appointment.belongsTo(models.Physician);
-    Appointment.belongsTo(models.Patient);
+    Appointment.belongsTo(models.Physician,{foreignKey:'id'});
+    Appointment.belongsTo(models.Patient,{foreignKey:'id'});
   };
   return Appointment;
 };

@@ -35,15 +35,8 @@ const createPatient = (req, res) => {
     Patient.create({
         name: req.body.name
       })
-        .then(res => {
-          res.json(res);
-        })
-        .catch(err => {
-          
-          console.log(err);
-          res.json(err)
-    
-        }
+        .then(res =>res.json(res))
+        .catch(err =>res.json(err)
         
         );
 
@@ -62,9 +55,7 @@ const deletePatient = (req, res) => {
     Patient.destroy({
         where: { id: req.params.id }
       })
-        .then(patient => {
-          res.json(patient);
-        })
+        .then(patient =>res.json(patient))
         .catch(err => res.json(err));
 }
 
