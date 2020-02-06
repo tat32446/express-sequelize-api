@@ -11,3 +11,6 @@ cd app
 npx sequelize-cli db:migrate
 
 npm start
+
+
+http://localhost:5000/api/appointments
