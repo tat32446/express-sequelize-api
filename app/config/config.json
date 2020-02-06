@@ -1,26 +1,26 @@
 {
   "development": {
-    "username": "postgres",
-    "port":5433,
-    "password": "pega@123",
-    "database": "postgres",
-    "host": "52.37.247.51",
-    "dialect": "postgres"
+    "username": "root",
+    "port":3306,
+    "password": "root",
+    "database": "sikkimproduce_dev",
+    "host": "192.168.66.6",
+    "dialect": "mysql"
   },
   "test": {
-    "username": "postgres",
-    "port":5433,
-    "password": "pega@123",
-    "database": "postgres",
-    "host": "52.37.247.51",
-    "dialect": "postgres"
+    "username": "root",
+    "port":3306,
+    "password": "root",
+    "database": "sikkimproduce_dev",
+    "host": "192.168.66.6",
+    "dialect": "mysql"
   },
   "production": {
-    "username": "postgres",
-    "port":5433,
-    "password": "pega@123",
-    "database": "postgres",
-    "host": "52.37.247.51",
-    "dialect": "postgres"
+    "username": "root",
+    "port":3306,
+    "password": "root",
+    "database": "sikkimproduce_dev",
+    "host": "192.168.66.6",
+    "dialect": "mysql"
   }
 }
